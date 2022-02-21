@@ -2,6 +2,7 @@
   <div>
     <TheHeader />
     <the-search />
+    <the-country-card />
   </div>
 </template>
 

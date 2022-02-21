@@ -11,9 +11,10 @@
         class="options mr-4 px-5 my-4 border-0 bg-white shadow w-30 font-font-weight-normal"
       >
         <option value="volvo">Filter By Region</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+        <option value="Europe">Europe</option>
+        <option value="Africa">Africa</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
       </select>
     </div>
   </div>
