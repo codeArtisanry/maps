@@ -25,7 +25,7 @@
       >
         <router-link
           class="card font m-4 h-100 border-0 shadow-lg text-dark mb-2"
-          :to="{ path: 'vatsal/' + country.nativeName + '/countrydetails' }"
+          :to="{ path: 'vatsal/' + index + '/countrydetails' }"
         >
           <div class="flag-img">
             <img
