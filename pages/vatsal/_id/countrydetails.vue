@@ -97,13 +97,6 @@ export default {
       )
       this.countries = res
     },
-    // async getCountriesByCode(countryName) {
-    //   const res = await this.$axios.$get(
-    //     'https://restcountries.com/v2/all/' + index
-    //   )
-    //   this.index.name = res[0].name
-    //   this.$router.push('/vatsal/' + this.countrydetails.id + '/countrydetails')
-    // },
     Back() {
       this.$router.push('/vatsal')
     },
