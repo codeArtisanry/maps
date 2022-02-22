@@ -29,7 +29,15 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/fontawesome',
   ],
+  fontawesome: {
+    component: 'fa',
+    icons: {
+      solid: true,
+      brands: true,
+    },
+  },
   eslint: {
     /* module options */
     extensions: ['js', 'vue'],

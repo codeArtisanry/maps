@@ -1,15 +1,44 @@
 <template>
   <div>
     <TheHeader />
-    <the-search />
-    <the-country-card />
+    <the-country-card :countries="countries" />
   </div>
 </template>
 
 <script>
 import TheHeader from '~/components/TheHeader.vue'
-import TheSearch from '~/components/TheSearch.vue'
-export default { components: { TheHeader, TheSearch } }
+export default {
+  components: { TheHeader },
+  data() {
+    return {
+      countries: [
+        {
+          name: '',
+          nativeName: '',
+          population: '',
+          region: '',
+          subregion: '',
+          capital: '',
+          languages: '',
+          currencies: '',
+          flags: {
+            png: '',
+          },
+        },
+      ],
+      show_country: true,
+    }
+  },
+  created() {
+    this.fetchcountry()
+  },
+  methods: {
+    async fetchcountry() {
+      const res = await this.$axios.$get('https://restcountries.com/v2/all')
+      this.countries = res
+    },
+  },
+}
 </script>
 
 <style>
