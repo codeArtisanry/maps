@@ -3,14 +3,15 @@
     <div class="pl-4 pr-3 pr-5 d-flex pt-5 justify-content-between">
       <input
         class="search w-25 mx-4 mt-5 p-3 w-25"
-        placeholder="Search for a country..."
+        placeholder="        Search for a country..."
         type="text"
+        required
       />
       <select
-        id=""
-        class="options mx-4 mt-5 p-2 w-20 border-0 bg-white shadow font-font-weight-normal"
+        id="select"
+        class="mx-4 mt-5 p-2 w-20 border-0 bg-white shadow font-weight-bold"
       >
-        <option value="volvo">Filter By Region</option>
+        <option value="">Filter By Region</option>
         <option value="Europe">Europe</option>
         <option value="Africa">Africa</option>
         <option value="Europe">Europe</option>
@@ -25,7 +26,7 @@
       >
         <router-link
           class="card font m-4 h-100 border-0 shadow-lg text-dark mb-2"
-          :to="{ path: 'vatsal/' + index + '/countrydetails' }"
+          :to="{ path: 'vatsal/' + country.name + '/countrydetails' }"
         >
           <div class="flag-img">
             <img
@@ -62,6 +63,13 @@ export default {
 </script>
 <style scoped>
 .search {
+  padding: 0.5% 6%;
+  margin: 0.5%;
+  background-image: url('https://www.pngarea.com/pngm/109/1164446_searchicon-png-search-icon-png-download.png');
+  background-repeat: no-repeat;
+  outline: 0;
+  background-position: 12px;
+  background-size: 16px;
   border-radius: 0.7em;
   width: 30em;
   border: none;
@@ -69,7 +77,6 @@ export default {
 }
 
 .flag-img {
-  width: 100%;
   height: 220px;
   border-top-right-radius: 0.8rem;
   border-top-left-radius: 0.8rem;

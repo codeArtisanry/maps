@@ -2,7 +2,7 @@
   <div>
     <the-header />
     <div class="pl-4">
-      <button class="btn backbtn" @click="Back">
+      <button class="btn backbtn btn-sm px-4 mb-5" @click="Back">
         <img
           class="back"
           :src="require('@/static/arrow-back-outline.svg')"
@@ -10,15 +10,15 @@
         />
         Back
       </button>
-      <div class="card border-0 p-2">
+      <div class="border-0 p-2">
         <div class="row">
           <div class="col-md-6">
-            <div class="card-img pl-5 flag">
+            <div class="pl-5 flag">
               <img class="flag" :src="countries[0].flag" alt="country flag" />
             </div>
           </div>
           <div class="col-md-6 pt-5">
-            <h2 class="title">{{ countries[0].name }}</h2>
+            <h3 class="title">{{ countries[0].name }}</h3>
             <div class="row">
               <div class="col-md-6">
                 <p>
@@ -41,6 +41,8 @@
                   Capital:
                   <span class="spa">{{ countries[0].capital }}</span>
                 </p>
+              </div>
+              <div class="col-md-6">
                 <p>
                   Top Level Domain:
                   <span class="spa">{{ countries[0].topLevelDomain[0] }}</span>
@@ -105,6 +107,17 @@ export default {
 </script>
 
 <style>
+@media (max-width: 1000px) {
+  .flag {
+    text-align: left;
+    width: 20em;
+  }
+}
+
+.back {
+  height: 22px;
+}
+
 .card {
   font-size: 1.1em;
 }
@@ -115,7 +128,7 @@ export default {
 }
 
 .title {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 600;
 }
 
