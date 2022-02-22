@@ -1,0 +1,140 @@
+@import url(https://fonts.google.com/specimen/Nunito+Sans);
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.c1 {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.c1:nth-child(1) {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+button {
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
+.toggle {
+  font-size: 20px;
+  cursor: pointer;
+  padding-right: 5px;
+}
+
+.form-c1 {
+  width: 400px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.form-c1 input {
+  width: 100%;
+  padding: 1px 30px;
+  outline: 0;
+  border: 0;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.form-c1 i {
+  position: absolute;
+  cursor: pointer;
+  padding-top: 0px;
+}
+
+.drop1 {
+  width: 200px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.drop2 {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: white;
+}
+
+.drop2 p {
+  letter-spacing: 00.5px;
+  margin-bottom: 5px;
+}
+
+.drop3 {
+  position: absolute;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  top: 3rem;
+  padding: 10px 14px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.drop3 p {
+  margin: 1px 0;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 1500px;
+  }
+}
+
+.countries {
+  padding: 30px;
+  display: grid;
+}
+
+.country {
+  min-height: 350px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.country-img {
+  height: 250px;
+}
+
+.country-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.countryinfo {
+  padding: 20px 17px;
+}
+
+.countryinfo h5 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
