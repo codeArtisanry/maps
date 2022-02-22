@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container c1">
-      <h3>Where in the world?</h3>
+      <h3><b>Where in the world?</b></h3>
       <button class="toggle"><fa icon="moon" />Dark Mode</button>
     </div>
     <div class="container c1">

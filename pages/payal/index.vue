@@ -1,11 +1,10 @@
 <template>
   <div>
     <top-header />
+    <country-data />
   </div>
 </template>
 
 <script>
-export default {
-  name: 'IndexPage',
-}
+export default {}
 </script>
