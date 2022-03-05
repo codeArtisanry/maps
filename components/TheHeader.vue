@@ -1,7 +1,7 @@
 <template>
   <div class="head navbar align-content-center">
     <h1>Where in the world?</h1>
-    <p class="pr-5">Dark Mode</p>
+    <p class="pr-5"><fa icon="moon" />Dark Mode</p>
   </div>
 </template>
 
